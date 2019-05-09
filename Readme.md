@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Елена Каликина](https://up.htmlacademy.ru/htmlcss/25/user/910291).
-* Наставник: `Светлана Корякина`.https://htmlacademy.ru/profile/id477401
+* Наставник: [Светлана Корякина](https://up.htmlacademy.ru/htmlcss/25/user/477401)
 
 ---
 
