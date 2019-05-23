@@ -11,7 +11,9 @@
 								<a class="main-header-logo" href="index.html">
 										<img src="img/logo-technomart.svg" alt="Техномарт">
 								</a>
-								<form></form>
+								<form>
+								<input type="search" placeholder="Поиск:">
+								</form>
 								<a href="#">Закладки</a>
 								<a href="#">Корзина</a>
 								<a href="#">Оформить заказ</a>
@@ -49,10 +51,40 @@
 			</section>
 			<section class="filters">
 				<h2>Перфораторы</h2>
-				<form action=""></form>
-				<span>Показать</span>
-			</section>
+				<form action="">
+					<p>Фильтр:</p>
+					<b>Цена:</b>
+					<input type="range">
+					<input type="text" value="0">
+					<input type="text" value="30500">
+					<b>Производители:</b>
+					<label for="bosch">Bosch</label>
+					<input type="checkbox" id="bosch" name="manufacturers" checked>
+					<label for="interscol">Интерскол</label>
+					<input type="checkbox" id="interscol" name="manufacturers">
+					<label for="makita">Makita</label>
+					<input type="checkbox" id="makita" name="manufacturers" checked>
+					<label for="dewalt">Dewalt</label>
+					<input type="checkbox" id="dewalt" name="manufacturers">
+					<label for="hitachi">Hitachi</label>
+					<input type="checkbox" id="hitachi" name="manufacturers">
+					<b>Питание:</b>
+					<label >
+						<input type="radio" name="power" value="аккумуляторные" checked> Аккумуляторные
+					</label>
+					<label>
+						<input type="radio" name="power" value="сетевые">
+					</label> Сетевые
+					<input type="submit" value="Показать">
+				</form>
+				</section>
 			<section class="catalog">
+				<p>Сортировка:</p>
+				<ul>
+					<li><a href="#">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По функционалу</a></li>
+				</ul>
 				<ul class="catalog-list">
 			<li class="catalog-item">
 				<h3>
@@ -250,5 +282,10 @@
 				<b>htmlacademy.ru</b>
 			</p>
 		</footer>
+		<section>
+			<b>Товар добавлен в корзину!</b>
+			<a href="#">Оформить заказ</a>
+			<a href="#">Продолжить покупки</a>
+		</section>
 </body>
 </html>
