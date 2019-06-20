@@ -9,33 +9,39 @@
     <link href="css/style.css" rel="stylesheet">
 		</head>
 		<body>
-				<header class="main-header">
+			<header class="main-header">
 				<div class="index-column">
 				<div class="logo">
-			<a class="main-header-logo" href="index.html">
-				<img src="img/logo-technomart.svg" alt="Техномарт">
-			</a>
+			<a class="main-logo" href="index.html"><p>Техномарт</p></a>
 			</div>
-			<form>
+			<form class="search">
+				<img src="img/icon-search.svg" width="17px" height="17px">
 				<input type="search" placeholder="Поиск:">
 			</form>
 			<ul class="other">
-				<li><a href="#">Закладки</a></li>
-				<li><a href="#">Корзина</a></li>
-				<li><a href="#">Оформить заказ</a></li>
+				<li><img src="img/icon-bookmark.svg" alt="Закладки"><a href="#">Закладки</a></li>
+				<li><img src="img/icon-cart.svg" alt="Корзина"><a href="#">Корзина</a></li>
+				<li><span class="order"><a href="#">Оформить заказ</a></span></li>
 			</ul>
 			</div>
+			<div class="info">
 			<p class="description">Интернет-магазин строительных материалов и инструментов для ремонта
 			</p>
+			<div class="phone-address">
+			<div class="phone">
+			<img class="icon-phone" src="img/icon-phone.svg">
 			<a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+		</div>
 			<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 		<p>
-			<span>Равшан Джамшутович</span>
+		</div>
+		<span>Равшан Джамшутович</span>
 			<ul class="profile">
 				<li><a href="#">Мои заказы</a></li>
 				<li><a href="#">Личный кабинет</a></li>
 			</ul>
 		</p>
+	</div>
 		<ul class="main-navigation">
 					<li>Главная</li>
 					<li><a href="#">Компания</a></li>
@@ -45,7 +51,7 @@
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
-	</header>						
+	</header>					
 	<main>
 					<section>
 				<ul class="way">
@@ -55,6 +61,7 @@
 					<li>Перфораторы</li>
 				</ul>
 			</section>
+			<div class="assortment">
 			<section class="filters">
 				<h2>Перфораторы</h2>
 				<form action="">
@@ -63,7 +70,7 @@
 					<input type="range">
 					<input type="text" value="0">
 					<input type="text" value="30500">
-					<fieldset>
+					<fieldset class="manufacturers">
 					<legend>Производители:</legend>
 					<label><input type="checkbox" name="bosch" checked>Bosch</label>
 					<label><input type="checkbox" name="interscol">Интерскол</label>
@@ -71,7 +78,7 @@
 					<label><input type="checkbox" name="dewalt">Dewalt</label>
 					<label><input type="checkbox" name="hitachi">Hitachi</label>
 					</fieldset>
-					<fieldset>
+					<fieldset class="power">
 					<legend>Питание:</legend>
 					<label><input type="radio" name="power" value="аккумуляторные" checked> Аккумуляторные</label>
 					<label><input type="radio" name="power" value="сетевые">Сетевые</label> 
@@ -81,7 +88,7 @@
 				</section>
 			<section class="catalog">
 				<p>Сортировка:</p>
-				<ul>
+				<ul class="sort">
 					<li><a href="#">По цене</a></li>
 					<li><a href="#">По типу</a></li>
 					<li><a href="#">По функционалу</a></li>
@@ -99,7 +106,7 @@
 			</a>
 		</p>
 		<p>
-		<del>22500 р.</del>
+		<del class="old-price">22500 р.</del>
 		</p>
 			<a href="#">
 			<span>15500 р.</span>
@@ -117,7 +124,7 @@
 			</a>
 		</p>
 		<p>
-		<del>30500 р.</del>
+		<del class="old-price">30500 р.</del>
 		</p>
 			<a href="#">
 			<span>25500 р.</span>
@@ -150,7 +157,7 @@
 			</a>
 		</p>
 		<p>
-		<del>22500 р.</del>
+		<del class="old-price">22500 р.</del>
 		</p>
 			<a href="#">
 			<span>15500 р.</span>
@@ -169,7 +176,7 @@
 			</a>
 		</p>
 		<p>
-		<del>30500 р.</del>
+		<del class="old-price">30500 р.</del>
 		</p>
 			<a href="#">
 			<span>25500 р.</span>
@@ -203,7 +210,7 @@
 			</a>
 		</p>
 		<p>
-		<del>22500 р.</del>
+		<del class="old-price">22500 р.</del>
 		</p>
 			<a href="#">
 			<span>15500 р.</span>
@@ -221,7 +228,7 @@
 			</a>
 		</p>
 		<p>
-		<del>30500 р.</del>
+		<del class="old-price">30500 р.</del>
 		</p>
 			<a href="#">
 			<span>25500 р.</span>
@@ -243,6 +250,7 @@
 			</a>
 	</li>
 </ul>
+</div>
 	<ul class="pagination-list">
 		<li>1</li>
 		<li><a href="#">2</a></li>
@@ -251,12 +259,10 @@
 	</ul>
 			</section>
 			</main>
-		<footer>
+		<footer class="footer-page">
 		<div class="navigation">
 			<div class="logo">
-				<a class="main-logo" href="index.html">
-				<img src="img/logo-technomart.svg" alt="Техномарт">
-			</a>
+			<a class="footer-logo" href="index.html"><p>Техномарт</p></a>
 			</div>
 			<ul class="navigation-list">
 				<li><a href="#">Компания</a></li>
